@@ -10,6 +10,7 @@ namespace Withinnan
         private bool _exit = false;
 
         PlayerStats player = new PlayerStats();
+        PathOneEnd path = new PathOneEnd();
 
         public void Main()
         {
@@ -42,12 +43,18 @@ namespace Withinnan
 
                 if (player.GetPassCheck() == true)
                 {
+                    Console.WriteLine("You pull and pull. Somehow you manage to break the old rusted padlock, allowing you to open the chest.");
+                    Console.ReadKey();
+                    Console.Clear();
+                    path.Main();
                     _exit = true;
                 }
 
                 else
                 {
                     Console.WriteLine("You pull, but the chains are just too secure.");
+                    Console.ReadKey();
+                    Console.WriteLine("You can try forcing again, or perhaps there's another way.");
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -61,12 +68,18 @@ namespace Withinnan
 
                 if (player.GetPassCheck() == true)
                 {
+                    Console.WriteLine("After messing with the lock for a bit you hear a click as the padlock opens. You move the chains and open the chest.");
+                    Console.ReadKey();
+                    Console.Clear();
+                    path.Main();
                     _exit = true;
                 }
 
                 else
                 {
                     Console.WriteLine("You attempt to pick the lock, but you can't seem to get it.");
+                    Console.ReadKey();
+                    Console.WriteLine("One more try might open it, or there may be another way through.");
                     Console.ReadKey();
                     Console.Clear();
                 }
@@ -80,6 +93,10 @@ namespace Withinnan
 
                 if (player.GetPassCheck() == true)
                 {
+                    Console.WriteLine("After thoroughly searching the room you find a key that perfectly matches the lock. You move the chains to the side and open the chest.");
+                    Console.ReadKey();
+                    Console.Clear();
+                    path.Main();
                     _exit = true;
                 }
 
@@ -87,6 +104,7 @@ namespace Withinnan
                 {
                     Console.WriteLine("You search the room for a key, but you don't see anything.");
                     Console.ReadKey();
+                    Console.WriteLine("There must be a key somewhere around here. You can search again, or try another approach.");
                     Console.Clear();
                 }
             }

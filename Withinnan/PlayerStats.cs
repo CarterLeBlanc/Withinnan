@@ -9,9 +9,9 @@ namespace Withinnan
         protected bool _passCheck = false;
 
         //Initialize the player's stats
-        protected int _playerStrength = 0;
-        protected int _playerIntelligence = 0;
-        protected int _playerCharisma = 0;
+        static protected int _playerStrength = 0;
+        static protected int _playerIntelligence = 0;
+        static protected int _playerCharisma = 0;
 
         Random random = new Random();
 
@@ -95,14 +95,14 @@ namespace Withinnan
                 }
             }
 
-            //If the player has a bonus of 30 added to their strength score
+            //If the player has a bonus of 60 added to their strength score
             else if (_playerStrength == 60)
             {
                 //Produce a random number between 1 and 10
                 int randomNumber = random.Next(1, 11);
 
                 //If the generated number is 7, 8, 9, or 10
-                if (randomNumber == 7 || randomNumber == 8 || randomNumber == 9 || randomNumber == 10)
+                if (randomNumber == 7 && randomNumber == 8 && randomNumber == 9 && randomNumber == 10)
                 {
                     //Player fails check
                     _passCheck = false;
@@ -123,17 +123,17 @@ namespace Withinnan
                 int randomNumber = random.Next(1, 11);
 
                 //If the random number is 10
-                if (randomNumber == 10)
+                if (randomNumber != 10)
                 {
                     //Player fails the check
-                    _passCheck = false;
+                    _passCheck = true;
                 }
 
                 //Otherwise
                 else
                 {
                     //Player passes check
-                    _passCheck = true;
+                    _passCheck = false;
                 }
             }
 
@@ -189,7 +189,7 @@ namespace Withinnan
                 }
             }
 
-            //If the player has a bonus of 30 added to their intelligence score
+            //If the player has a bonus of 60 added to their intelligence score
             else if (_playerIntelligence == 60)
             {
                 //Produce a random number between 1 and 10
@@ -283,7 +283,7 @@ namespace Withinnan
                 }
             }
 
-            //If the player has a bonus of 30 added to their charisma score
+            //If the player has a bonus of 60 added to their charisma score
             else if (_playerCharisma == 60)
             {
                 //Produce a random number between 1 and 10
