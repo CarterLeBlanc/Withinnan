@@ -7,7 +7,12 @@ namespace Withinnan
         static void Main(string[] args)
         {
             //Welcome message
-            Console.WriteLine("Welcome to Withinnan");
+            Console.WriteLine("____    __    ____  __  .___________. __    __   __  .__   __. .__   __.      ___      .__   __.");
+            Console.WriteLine("|   |  |  |  /   / |  | |           ||  |  |  | |  | |  | |  | |  | |  |     /   |     |  | |  |");
+            Console.WriteLine(" |   ||    |/   /  |  | `---|  |----`|  |__|  | |  | |   ||  | |   ||  |    /  ^  |    |   ||  |");
+            Console.WriteLine("  |            /   |  |     |  |     |   __   | |  | |  . `  | |  . `  |   /  |_|  |   |  . `  |");
+            Console.WriteLine("   |    ||    /    |  |     |  |     |  |  |  | |  | |  ||   | |  ||   |  /  _____  |  |  ||   |");
+            Console.WriteLine("    |__|  |__/     |__|     |__|     |__|  |__| |__| |__| |__| |__| |__| /__|     |__| |__| |__|");
             Console.ReadKey();
             Console.Clear();
 
@@ -17,7 +22,13 @@ namespace Withinnan
 
             //Starting quiz
             StartingQuiz quiz = new StartingQuiz();
-            quiz.Quiz();
+            quiz.Main();
+
+            Console.WriteLine("Now that we're done with that, shall we begin?");
+
+            //Starting room
+            StartingRoom room = new StartingRoom();
+            room.Main();
         }
     }
 }

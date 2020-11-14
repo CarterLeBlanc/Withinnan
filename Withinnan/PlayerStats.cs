@@ -110,6 +110,13 @@ namespace Withinnan
                     _passCheck = false;
                 }
             }
+
+            //If the player has a bonus of 100 or more added to their strength score
+            else if (_playerStrength >= 100)
+            {
+                //Player passes the check
+                _passCheck = true;
+            }
         }
 
         public void CheckIntelligence()
@@ -176,6 +183,13 @@ namespace Withinnan
                     _passCheck = false;
                 }
             }
+
+            //If the player has a bonus of 100 or more added to their intelligence score
+            else if (_playerIntelligence >= 100)
+            {
+                //Player passes the check
+                _passCheck = true;
+            }
         }
 
         public void CheckCharisma()
@@ -241,6 +255,13 @@ namespace Withinnan
                     //Player fails check
                     _passCheck = false;
                 }
+            }
+
+            //If the player has a bonus of 100 or more added to their charisma score
+            else if (_playerCharisma >= 100)
+            {
+                //Player passes the check
+                _passCheck = true;
             }
         }
     }

@@ -11,7 +11,7 @@ namespace Withinnan
 
         PlayerStats player = new PlayerStats();
 
-        public void Quiz()
+        public void Main()
         {
             //Loop question until valid answer is given
             while (!_exit)
@@ -76,26 +76,9 @@ namespace Withinnan
             _exit = false;
             _answer = "";
 
-            //Loop question until valid answer is given
-            while (!_exit)
-            {
-                //Ask question
-                Console.WriteLine("What is your favorite thing to do in your free time?");
-                Console.WriteLine("1: Exercise.");
-                Console.WriteLine("2: Research things I'm interested in.");
-                Console.WriteLine("3: Hang out with friends.");
-
-                //Set the answer to be whatever the user types
-                _answer = Console.ReadLine();
-
-                //Check to see if the answer is a valid choice
-                CheckAnswers(_answer);
-                Console.Clear();
-            }
-
-            //Reset _exit and _answer
-            _exit = false;
-            _answer = "";
+            Console.WriteLine("Excellent. These answers have given us a better idea of who you are.");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         public void CheckAnswers(string answer)
