@@ -6,10 +6,12 @@ namespace Withinnan
 {
     class PlayerStats
     {
+        //Initialize the player's stats
         protected int _playerStrength = 0;
         protected int _playerIntelligence = 0;
         protected int _playerCharisma = 0;
 
+        //Get and set functions for each stat
         public int GetStrength()
         {
             return _playerStrength;
