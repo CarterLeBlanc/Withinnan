@@ -35,31 +35,41 @@ namespace Withinnan
 
         public void CheckDecision(string choice)
         {
-            //Adjust player stats based on chosen answer
+            //Choose a path based on the player's decision
             if (choice == "1")
             {
+                Console.Clear();
+
                 PathOneStart pathOne = new PathOneStart();
                 pathOne.Main();
+
                 _exit = true;
             }
 
             if (choice == "2")
             {
+                Console.Clear();
+
                 PathTwoStart pathTwo = new PathTwoStart();
                 pathTwo.Main();
+
                 _exit = true;
             }
 
             if (choice == "3")
             {
+                Console.Clear();
+
                 PathThreeStart pathThree = new PathThreeStart();
                 pathThree.Main();
+
                 _exit = true;
             }
 
             //Ask the question again if a valid answer is not chosen
             else if (choice != "1" && choice != "2" && choice != "3")
             {
+                Console.Clear();
                 _choice = "";
                 Console.WriteLine("Please select a valid choice.");
                 Console.ReadKey();

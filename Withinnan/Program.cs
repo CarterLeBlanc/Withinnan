@@ -25,6 +25,8 @@ namespace Withinnan
             quiz.Main();
 
             Console.WriteLine("Now that we're done with that, shall we begin?");
+            Console.ReadKey();
+            Console.Clear();
 
             //Starting room
             StartingRoom room = new StartingRoom();

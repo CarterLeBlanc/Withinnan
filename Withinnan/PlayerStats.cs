@@ -23,7 +23,7 @@ namespace Withinnan
 
         public void SetStrength(int strength)
         {
-            _playerStrength += strength;
+            _playerStrength = (_playerStrength + strength);
         }
 
         public int GetIntelligence()
@@ -33,7 +33,7 @@ namespace Withinnan
 
         public void SetIntelligence(int intelligence)
         {
-            _playerIntelligence += intelligence;
+            _playerIntelligence = (_playerIntelligence + intelligence);
         }
 
         public int GetCharisma()
@@ -43,7 +43,12 @@ namespace Withinnan
 
         public void SetCharisma(int charisma)
         {
-            _playerCharisma += charisma;
+            _playerCharisma = (_playerCharisma + charisma);
+        }
+
+        public bool GetPassCheck()
+        {
+            return _passCheck;
         }
 
         public void CheckStrength()
@@ -96,18 +101,18 @@ namespace Withinnan
                 //Produce a random number between 1 and 10
                 int randomNumber = random.Next(1, 11);
 
-                //As long as the random number isn't 10
-                if (randomNumber != 10)
+                //If the random number is 10
+                if (randomNumber == 10)
                 {
-                    //Player passes the check
-                    _passCheck = true;
+                    //Player fails the check
+                    _passCheck = false;
                 }
 
                 //Otherwise
                 else
                 {
-                    //Player fails check
-                    _passCheck = false;
+                    //Player passes check
+                    _passCheck = true;
                 }
             }
 
@@ -169,18 +174,18 @@ namespace Withinnan
                 //Produce a random number between 1 and 10
                 int randomNumber = random.Next(1, 11);
 
-                //As long as the random number isn't 10
-                if (randomNumber != 10)
+                //If the random number is 10
+                if (randomNumber == 10)
                 {
-                    //Player passes the check
-                    _passCheck = true;
+                    //Player fails the check
+                    _passCheck = false;
                 }
 
                 //Otherwise
                 else
                 {
-                    //Player fails check
-                    _passCheck = false;
+                    //Player passes check
+                    _passCheck = true;
                 }
             }
 
@@ -242,18 +247,18 @@ namespace Withinnan
                 //Produce a random number between 1 and 10
                 int randomNumber = random.Next(1, 11);
 
-                //As long as the random number isn't 10
-                if (randomNumber != 10)
+                //If the random number is 10
+                if (randomNumber == 10)
                 {
-                    //Player passes the check
-                    _passCheck = true;
+                    //Player fails the check
+                    _passCheck = false;
                 }
 
                 //Otherwise
                 else
                 {
-                    //Player fails check
-                    _passCheck = false;
+                    //Player passes check
+                    _passCheck = true;
                 }
             }
 
