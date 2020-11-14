@@ -101,26 +101,26 @@ namespace Withinnan
         public void CheckAnswers(string answer)
         {
             //Adjust player stats based on chosen answer
-            if (answer == "A")
+            if (answer == "1")
             {
                 player.SetStrength(30);
                 _exit = true;
             }
 
-            if (answer == "B")
+            if (answer == "2")
             {
                 player.SetIntelligence(30);
                 _exit = true;
             }
 
-            if (answer == "C")
+            if (answer == "3")
             {
                 player.SetCharisma(30);
                 _exit = true;
             }
 
             //Ask the question again if a valid answer is not chosen
-            else if (answer != "A" && answer != "B" && answer != "C")
+            else if (answer != "1" && answer != "2" && answer != "3")
             {
                 _answer = "";
                 Console.WriteLine("Please select a valid choice.");
