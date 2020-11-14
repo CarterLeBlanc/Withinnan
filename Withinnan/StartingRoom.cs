@@ -13,11 +13,11 @@ namespace Withinnan
         {
             Console.WriteLine("You open your eyes. The room is dark and appears to be mostly empty.");
             Console.ReadKey();
+            Console.WriteLine("Everything feels so familiar, yet so strange at the same time.");
+            Console.ReadKey();
             Console.WriteLine("On the wall to your left you can see a simple BLACK door. The color is faded and it seems to be worn out.");
             Console.ReadKey();
-            Console.WriteLine("On the wall to your right is an elaborately decorated door. It is RED with an intricate gold design. It looks almost as if it's never been touched.");
-            Console.ReadKey();
-            Console.WriteLine("Directly in front of you is another door. It's a dark shade of BLUE. The door's design is nothing special, but it still looks significantly better than the BLACK door.");
+            Console.WriteLine("On the wall to your right is an elaborately decorated door. It is BLUE with an intricate silver design. It looks almost as if it's never been touched.");
             Console.ReadKey();
             Console.Clear();
 
@@ -25,8 +25,7 @@ namespace Withinnan
             {
                 Console.WriteLine("Which door would you like to open?");
                 Console.WriteLine("1: BLACK");
-                Console.WriteLine("2: RED");
-                Console.WriteLine("3: BLUE");
+                Console.WriteLine("2: BLUE");
 
                 _choice = Console.ReadLine();
                 CheckDecision(_choice);
@@ -52,16 +51,6 @@ namespace Withinnan
 
                 PathTwoStart pathTwo = new PathTwoStart();
                 pathTwo.Main();
-
-                _exit = true;
-            }
-
-            if (choice == "3")
-            {
-                Console.Clear();
-
-                PathThreeStart pathThree = new PathThreeStart();
-                pathThree.Main();
 
                 _exit = true;
             }

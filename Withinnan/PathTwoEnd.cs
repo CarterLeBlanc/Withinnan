@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Withinnan
 {
-    class PathThreeStart
+    class PathTwoEnd
     {
         public void Main()
         {
             Console.WriteLine("Test");
-            Console.ReadKey();
         }
     }
 }
