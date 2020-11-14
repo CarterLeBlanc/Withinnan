@@ -15,7 +15,7 @@ namespace Withinnan
         {
             Console.WriteLine("You enter a messy room. There are tables overturned, and the walls and floor are marred by what appear to be large claw marks.");
             Console.ReadKey();
-            Console.WriteLine("You also notice a rather sizable chest. It is wrapped in chains that are held together with a padlock.");
+            Console.WriteLine("You also notice a rather sizable chest. It is wrapped in chains that are held together with a rusty padlock.");
             Console.ReadKey();
             Console.Clear();
 

@@ -95,6 +95,27 @@ namespace Withinnan
                 }
             }
 
+            //If the player has a bonus of 30 added to their strength score
+            else if (_playerStrength == 60)
+            {
+                //Produce a random number between 1 and 10
+                int randomNumber = random.Next(1, 11);
+
+                //If the generated number is 7, 8, 9, or 10
+                if (randomNumber == 7 || randomNumber == 8 || randomNumber == 9 || randomNumber == 10)
+                {
+                    //Player fails check
+                    _passCheck = false;
+                }
+
+                //Otherwise
+                else
+                {
+                    //Player passes the check
+                    _passCheck = true;
+                }
+            }
+
             //If the player has a bonus of 90 added to their strength score
             else if (_playerStrength == 90)
             {
@@ -168,6 +189,27 @@ namespace Withinnan
                 }
             }
 
+            //If the player has a bonus of 30 added to their intelligence score
+            else if (_playerIntelligence == 60)
+            {
+                //Produce a random number between 1 and 10
+                int randomNumber = random.Next(1, 11);
+
+                //If the generated number is 7, 8, 9, or 10
+                if (randomNumber == 7 || randomNumber == 8 || randomNumber == 9 || randomNumber == 10)
+                {
+                    //Player fails check
+                    _passCheck = false;
+                }
+
+                //Otherwise
+                else
+                {
+                    //Player passes the check
+                    _passCheck = true;
+                }
+            }
+
             //If the player has a bonus of 90 added to their intelligence score
             else if (_playerIntelligence == 90)
             {
@@ -238,6 +280,27 @@ namespace Withinnan
                 {
                     //Player fails check
                     _passCheck = false;
+                }
+            }
+
+            //If the player has a bonus of 30 added to their charisma score
+            else if (_playerCharisma == 60)
+            {
+                //Produce a random number between 1 and 10
+                int randomNumber = random.Next(1, 11);
+
+                //If the generated number is 7, 8, 9, or 10
+                if (randomNumber == 7 || randomNumber == 8 || randomNumber == 9 || randomNumber == 10)
+                {
+                    //Player fails check
+                    _passCheck = false;
+                }
+
+                //Otherwise
+                else
+                {
+                    //Player passes the check
+                    _passCheck = true;
                 }
             }
 
