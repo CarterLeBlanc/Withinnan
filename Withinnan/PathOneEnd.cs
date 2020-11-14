@@ -41,7 +41,6 @@ namespace Withinnan
 
         public void CheckDecision(string choice)
         {
-            //Perform a stat check based on the player's decision
             if (choice == "1")
             {
                 Console.WriteLine("You lunge at the beast and the beast fights back.");
