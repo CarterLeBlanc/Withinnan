@@ -1,0 +1,11 @@
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.exe
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.deps.json
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.runtimeconfig.json
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.runtimeconfig.dev.json
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.dll
+C:\Users\s198027\source\repos\Withinnan\Withinnan\bin\Release\netcoreapp3.1\Withinnan.pdb
+C:\Users\s198027\source\repos\Withinnan\Withinnan\obj\Release\netcoreapp3.1\Withinnan.csprojAssemblyReference.cache
+C:\Users\s198027\source\repos\Withinnan\Withinnan\obj\Release\netcoreapp3.1\Withinnan.AssemblyInfoInputs.cache
+C:\Users\s198027\source\repos\Withinnan\Withinnan\obj\Release\netcoreapp3.1\Withinnan.AssemblyInfo.cs
+C:\Users\s198027\source\repos\Withinnan\Withinnan\obj\Release\netcoreapp3.1\Withinnan.dll
+C:\Users\s198027\source\repos\Withinnan\Withinnan\obj\Release\netcoreapp3.1\Withinnan.pdb
